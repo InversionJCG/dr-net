@@ -1,2 +1,2 @@
-# dr-net
-Dr. Net Repository (PLDT Hackathon)
+# olalo-realty
+The Olalo Real Estate Web Repository
