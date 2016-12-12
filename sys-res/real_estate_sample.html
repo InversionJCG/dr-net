@@ -1,0 +1,941 @@
+
+<!doctype html>
+<html lang="en-US" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+				
+		<meta name="description" content="Just another Wordpress Site">
+		<!--[if lt IE 9]>
+		<script src="wp-content/themes/pointfinder/pointfinder/js/html5shiv.js"></script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" href="wp-content/uploads/sites/4/2014/11/favicon.png" type="image/x-icon"><link rel="icon" href="wp-content/uploads/sites/4/2014/11/favicon.png" type="image/x-icon"><title>Home Page + Mini Search &#8211; Point Finder Real Estate Demo</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:400,600,700', 'Roboto:400', 'Roboto+Condensed:700,400&amp;subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Point Finder Real Estate Demo &raquo; Feed" href="https://pointfindertheme.com/demo/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Point Finder Real Estate Demo &raquo; Comments Feed" href="https://pointfindertheme.com/demo/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Point Finder Real Estate Demo &raquo; Home Page + Mini Search Comments Feed" href="https://pointfindertheme.com/demo/home-page-mini-search/feed/" />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,300,700);.tp-caption.roundedimage img{-webkit-border-radius:300px;  -moz-border-radius:300px;  border-radius:300px}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
+</style>
+<link rel='stylesheet' id='bbp-default-css'  href='wp-content/themes/pointfinder/pointfinder/css/bbpress.css?ver=2.5.10-6063' media='screen' />
+<link rel='stylesheet' id='bootstrap-css'  href='wp-content/themes/pointfinder/pointfinder/css/bootstrap.min.css?ver=3.2' media='all' />
+<link rel='stylesheet' id='fontellopf-css'  href='wp-content/themes/pointfinder/pointfinder/css/fontello.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='theme-prettyphotocss-css'  href='wp-content/themes/pointfinder/pointfinder/css/prettyPhoto.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='theme-style-css'  href='wp-content/themes/pointfinder/pointfinder/style.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='theme-owlcarousel-css'  href='wp-content/themes/pointfinder/pointfinder/css/owl.carousel.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='pfcss-animations-css'  href='wp-content/themes/pointfinder/pointfinder/css/animate.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='pfsearch-goldenforms-css-css'  href='wp-content/themes/pointfinder/pointfinder/css/golden-forms.min.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='pf-frontend-compiler-css'  href='wp-content/uploads/sites/4/pfstyles/pf-style-frontend.css?ver=1477576984' media='all' />
+<link rel='stylesheet' id='pf-main-compiler-css'  href='wp-content/uploads/sites/4/pfstyles/pf-style-main.css?ver=1477576984' media='all' />
+<link rel='stylesheet' id='pf-customp-compiler-css'  href='wp-content/uploads/sites/4/pfstyles/pf-style-custompoints.css?ver=1477576984' media='all' />
+<link rel='stylesheet' id='pf-pbstyles-compiler-css'  href='wp-content/uploads/sites/4/pfstyles/pf-style-pbstyles.css?ver=1477576984' media='all' />
+<link rel='stylesheet' id='pf-search-compiler-css'  href='wp-content/uploads/sites/4/pfstyles/pf-style-search.css?ver=1477576984' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12.1' media='all' />
+<link rel='stylesheet' id='bsf-Defaults-css'  href='wp-content/uploads/sites/4/smile_fonts/Defaults/Defaults.css?ver=4.6.1' media='all' />
+<link rel='stylesheet' id='ultimate-style-min-css'  href='wp-content/plugins/Ultimate_VC_Addons/assets/min-css/ultimate.min.css?ver=3.16.7' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-pfpbcontrol_options-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%7CRoboto+Condensed%3A400&#038;subset=latin&#038;ver=1451299475' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6'></script>
+<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/theme-scripts-header.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate.min.js?ver=3.16.7'></script>
+<link rel='https://api.w.org/' href='https://pointfindertheme.com/demo/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pointfindertheme.com/demo/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="https://pointfindertheme.com/demo/home-page-mini-search/" />
+<link rel='shortlink' href='https://pointfindertheme.com/demo/?p=3342' />
+<link rel="alternate" type="application/json+oembed" href="https://pointfindertheme.com/demo/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpointfindertheme.com%2Fdemo%2Fhome-page-mini-search%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://pointfindertheme.com/demo/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpointfindertheme.com%2Fdemo%2Fhome-page-mini-search%2F&#038;format=xml" />
+<style> .admin-bar #pfheadernav { margin-top:0!important } </style><meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<style type="text/css" title="dynamic-css" class="options-output">.wpf-footer-row-move.wpf-footer-row-movepg:before{height:0;}.wpf-footer-row-move.wpf-footer-row-movepg:before{margin-top:0;margin-bottom:0;}.pointfinderexfooterclasspg{color:#000000;}.pointfinderexfooterclasspg a{color:#000000;}.pointfinderexfooterclasspg a:hover{color:#B32E2E;}.pointfinderexfooterclasspg{padding-top:50px;padding-bottom:50px;}.pointfinderexfooterclassxpg{padding-top:0;padding-bottom:0;}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1451399256997{padding-top: 150px !important;padding-bottom: 200px !important;}.vc_custom_1423199146666{padding-top: 50px !important;padding-bottom: 52px !important;}.vc_custom_1427996279389{padding-top: 32px !important;padding-bottom: 60px !important;background-image: url(wp-content/uploads/sites/4/revslider/sliderpreview/darkblurbg.jpg?id=980) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1451242416469{background-color: #ffffff !important;}.vc_custom_1451242464933{padding-top: 35px !important;background-color: #34495e !important;}.vc_custom_1423198924244{padding-top: 70px !important;padding-bottom: 59px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>		
+	</head>
+	<body class="page page-id-3342 page-template-default home-page-mini-search wpb-js-composer js-comp-ver-4.12.1 vc_responsive" >
+					<div id="pf-loading-dialog" class="pftsrwcontainer-overlay"></div>
+        <header class="wpf-header hidden-print" id="pfheadernav">
+        	        	<div class="pftopline wpf-transition-all">
+        		<div class="pf-container">
+					<div class="pf-row">
+						<div class="col-lg-12 col-md-12">
+														<div class="wpf-toplinewrapper">
+																<div class="pf-toplinks-left clearfix">
+									<ul class="pf-sociallinks">
+										<li class="pf-sociallinks-item facebook  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-770"></i></a></li><li class="pf-sociallinks-item twitter  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-769"></i></a></li><li class="pf-sociallinks-item linkedin  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-824"></i></a></li><li class="pf-sociallinks-item google-plus  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-813"></i></a></li><li class="pf-sociallinks-item pinterest  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-810"></i></a></li><li class="pf-sociallinks-item instagram  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-954"></i></a></li><li class="pf-sociallinks-item rss  wpf-transition-all"><a href="#" target="_blank"><i class="pfadmicon-glyph-914"></i></a></li>										
+																		<li class="pf-sociallinks-item pf-infolinks-item envelope  wpf-transition-all">
+										<a href="#"><i class="pfadmicon-glyph-765"></i> <span class="pf-infolink-item-text">001 (123) 123 12 34</span></a>
+									</li>
+									
+																		<li class="pf-sociallinks-item pf-infolinks-item pflast envelope  wpf-transition-all">
+										<a href="#"><i class="pfadmicon-glyph-823"></i><span class="pf-infolink-item-text">info@pointfindertheme.com</span></a>
+									</li>
+																		</ul>
+								
+								</div>
+																								<div class="pf-toplinks-right clearfix">
+																		<nav id="pf-topprimary-nav" class="pf-topprimary-nav pf-nav-dropdown clearfix hidden-sm hidden-xs">
+										<ul class="pf-nav-dropdown pfnavmenu pf-topnavmenu ">
+											<li class="pf-my-account pfloggedin">
+																								
+											</li>
+																						<li class="pf-login-register" id="pf-login-trigger-button"><a href="#"><i class="pfadmicon-glyph-584"></i> Login</a></li>
+											<li class="pf-login-register" id="pf-register-trigger-button"><a href="#"><i class="pfadmicon-glyph-365"></i> Register</a></li>
+
+																						<li class="pf-login-register" id="pf-lp-trigger-button"><a href="#"><i class="pfadmicon-glyph-889"></i> Forgot Password</a></li>
+																					</ul>
+									</nav>
+								</div>
+															</div>
+						</div>
+					</div>
+				</div>
+        	</div>
+                        <div class="wpf-navwrapper">
+            	
+	            					<a id="pf-primary-nav-button" title="Menu"><i class="pfadmicon-glyph-500"></i></a>
+							
+								<a id="pf-topprimary-nav-button" title="User Menu"><i class="pfadmicon-glyph-632"></i></a>
+				<a id="pf-topprimary-nav-button2" title="User Menu"><i class="pfadmicon-glyph-787"></i></a>
+								<a id="pf-primary-search-button" title="Search"><i class="pfadmicon-glyph-627"></i></a>
+			
+				<div class="pf-container pf-megamenu-container">
+					<div class="pf-row">
+						
+																		<div class="col-lg-3 col-md-3">
+							<a class="pf-logo-container" href="https://pointfindertheme.com/demo"></a>
+						</div>
+												<div class="col-lg-9 col-md-9" id="pfmenucol1">
+							<div class="pf-menu-container">
+
+								<nav id="pf-primary-nav" class="pf-nav-dropdown clearfix">
+									<ul class="pf-nav-dropdown pfnavmenu pf-topnavmenu">
+										<li id="nav-menu-item-1249" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"><a href="https://pointfindertheme.com/demo/" class="menu-link main-menu-link">Home Styles</a>
+<ul class="sub-menu menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-3344" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3342 current_page_item"><a href="https://pointfindertheme.com/demo/home-page-mini-search/" class="menu-link sub-menu-link">Home v2: Mini Search + Image BG</a></li>
+	<li id="nav-menu-item-3304" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page-2/" class="menu-link sub-menu-link">Home v3: Mini Search + Video BG</a></li>
+	<li id="nav-menu-item-3303" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page-full-height-map/" class="menu-link sub-menu-link">Home v4: Full Height Map</a></li>
+	<li id="nav-menu-item-3302" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page-transparent-header/" class="menu-link sub-menu-link">Home v5: Transparent Head</a></li>
+	<li id="nav-menu-item-39" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page/home-page-v2/" class="menu-link sub-menu-link">Home v6: Property Slider</a></li>
+	<li id="nav-menu-item-273" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page/home-page-revolution-slider/" class="menu-link sub-menu-link">Home v7: Revolution Slider</a></li>
+	<li id="nav-menu-item-1099" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page/home-page-property-carousel/" class="menu-link sub-menu-link">Home v8: Property Carousel</a></li>
+	<li id="nav-menu-item-1822" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page-image-bg/" class="menu-link sub-menu-link">Home v9: Image BG + Map</a></li>
+	<li id="nav-menu-item-1825" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/home-page-video-bg/" class="menu-link sub-menu-link">Home v10: Video BG + Map</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-1328" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/features/" class="menu-link main-menu-link">Features</a></li>
+<li id="nav-menu-item-682" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link">Listings</a>
+<ul class="sub-menu menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-776" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/grid-list-right-sidebar/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-201"></i> Grid List with Right Sidebar</a></li>
+	<li id="nav-menu-item-793" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/grid-list-left-sidebar/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-200"></i> Grid List with Left Sidebar</a></li>
+	<li id="nav-menu-item-3362" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/grid-list-with-map/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-206"></i> Grid List with Map</a></li>
+	<li id="nav-menu-item-3352" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/row-list-with-right-sidebar/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-209"></i> Row List with Right Sidebar</a></li>
+	<li id="nav-menu-item-3355" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/row-list-with-map/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-204"></i> Row List with Map</a></li>
+	<li id="nav-menu-item-3446" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link sub-menu-link"><i class="pfadmicon-glyph"></i> By Listing Type</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu  menu-depth-2">
+		<li id="nav-menu-item-3444" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderltypes"><a href="https://pointfindertheme.com/demo/listing/for-sale/" class="menu-link sub-menu-link">For Sale</a></li>
+		<li id="nav-menu-item-3445" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderltypes"><a href="https://pointfindertheme.com/demo/listing/for-rent/" class="menu-link sub-menu-link">For Rent</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3447" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-1"></i> By Item Type</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu  menu-depth-2">
+		<li id="nav-menu-item-3450" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes menu-item-has-children"><a href="https://pointfindertheme.com/demo/types/residential/" class="menu-link sub-menu-link">Residential</a>
+		<ul class="sub-menu menu-odd  pfnavsub-menu  menu-depth-3">
+			<li id="nav-menu-item-3451" class="sub-menu-item sub-sub-menu-item menu-item-odd menu-item-depth-3 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes"><a href="https://pointfindertheme.com/demo/types/residential/apartment/" class="menu-link sub-menu-link">Apartment</a></li>
+			<li id="nav-menu-item-3452" class="sub-menu-item sub-sub-menu-item menu-item-odd menu-item-depth-3 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes"><a href="https://pointfindertheme.com/demo/types/residential/condominium/" class="menu-link sub-menu-link">Condominium</a></li>
+			<li id="nav-menu-item-3453" class="sub-menu-item sub-sub-menu-item menu-item-odd menu-item-depth-3 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes"><a href="https://pointfindertheme.com/demo/types/residential/villa/" class="menu-link sub-menu-link">Villa</a></li>
+		</ul>
+</li>
+		<li id="nav-menu-item-3456" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes menu-item-has-children"><a href="https://pointfindertheme.com/demo/types/commercial/" class="menu-link sub-menu-link">Commercial</a>
+		<ul class="sub-menu menu-odd  pfnavsub-menu  menu-depth-3">
+			<li id="nav-menu-item-3454" class="sub-menu-item sub-sub-menu-item menu-item-odd menu-item-depth-3 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes"><a href="https://pointfindertheme.com/demo/types/commercial/shop/" class="menu-link sub-menu-link">Shop</a></li>
+			<li id="nav-menu-item-3455" class="sub-menu-item sub-sub-menu-item menu-item-odd menu-item-depth-3 menu-item menu-item-type-taxonomy menu-item-object-pointfinderitypes"><a href="https://pointfindertheme.com/demo/types/commercial/office/" class="menu-link sub-menu-link">Office</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3448" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-2"></i> By Condition</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu  menu-depth-2">
+		<li id="nav-menu-item-3457" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderconditions"><a href="https://pointfindertheme.com/demo/condition/foreclosure/" class="menu-link sub-menu-link">Foreclosure</a></li>
+		<li id="nav-menu-item-3458" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderconditions"><a href="https://pointfindertheme.com/demo/condition/freehold/" class="menu-link sub-menu-link">Freehold</a></li>
+		<li id="nav-menu-item-3459" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderconditions"><a href="https://pointfindertheme.com/demo/condition/no-chain/" class="menu-link sub-menu-link">No Chain</a></li>
+		<li id="nav-menu-item-3460" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderconditions"><a href="https://pointfindertheme.com/demo/condition/vacant/" class="menu-link sub-menu-link">Vacant</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3449" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-3"></i> By Features</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu  menu-depth-2">
+		<li id="nav-menu-item-3461" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderfeatures"><a href="https://pointfindertheme.com/demo/feature/attic/" class="menu-link sub-menu-link">Attic</a></li>
+		<li id="nav-menu-item-3462" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderfeatures"><a href="https://pointfindertheme.com/demo/feature/barbecue/" class="menu-link sub-menu-link">Barbecue</a></li>
+		<li id="nav-menu-item-3463" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-pointfinderfeatures"><a href="https://pointfindertheme.com/demo/feature/cable-ready/" class="menu-link sub-menu-link">Cable Ready</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3470" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link sub-menu-link"><i class=" pfadmicon-glyph-4"></i> By Tags</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu  menu-depth-2">
+		<li id="nav-menu-item-3467" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-post_tag"><a href="https://pointfindertheme.com/demo/tag/house/" class="menu-link sub-menu-link">house</a></li>
+		<li id="nav-menu-item-3468" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-post_tag"><a href="https://pointfindertheme.com/demo/tag/real-estate/" class="menu-link sub-menu-link">real estate</a></li>
+		<li id="nav-menu-item-3469" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-taxonomy menu-item-object-post_tag"><a href="https://pointfindertheme.com/demo/tag/property/" class="menu-link sub-menu-link">property</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="nav-menu-item-1623" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link">Agents</a>
+<ul class="sub-menu menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-1076" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/agent-list/" class="menu-link sub-menu-link">Agent List</a></li>
+	<li id="nav-menu-item-1622" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-agents"><a href="https://pointfindertheme.com/demo/agents/jane-doe/" class="menu-link sub-menu-link">Single Agent &#8211; Jane Doe</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-248" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children pf-megamenu-main"><a href="https://pointfindertheme.com/demo/shortcodes/" class="menu-link main-menu-link">Shortcodes</a>
+<ul class="sub-menu pfnav-megasubmenu pfnav-megasubmenu-col4 menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-3386" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link pf-megamenu-hidedesktop sub-menu-link">&#8211;</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu pf-megamenu-unhide menu-depth-2">
+		<li id="nav-menu-item-464" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-ajax-grid-shortcode/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-206"></i> Pointfinder Ajax Grid</a></li>
+		<li id="nav-menu-item-478" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-static-grid-shortcode-2/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-205"></i> Pointfinder Static Grid</a></li>
+		<li id="nav-menu-item-463" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-static-grid-shortcode/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-368"></i> Pointfinder Directory Map</a></li>
+		<li id="nav-menu-item-3382" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pointfinder-directory-list/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-204"></i> Pointfinder Directory List</a></li>
+		<li id="nav-menu-item-3381" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pointfinder-mini-search/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-155"></i> Pointfinder Mini Search</a></li>
+		<li id="nav-menu-item-460" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-item-slider/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-228"></i> Pointfinder Property Slider</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3387" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link pf-megamenu-hidedesktop sub-menu-link">&#8211;</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu pf-megamenu-unhide menu-depth-2">
+		<li id="nav-menu-item-1138" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/property-carousel-shortcode/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-203"></i> Pointfinder  Property Carousel</a></li>
+		<li id="nav-menu-item-459" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-client-carousel/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-202"></i> Pointfinder Client Carousel</a></li>
+		<li id="nav-menu-item-462" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-contact-map-shortcode/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-180"></i> Pointfinder Contact Map</a></li>
+		<li id="nav-menu-item-461" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/pf-contact-form-shortcode/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-211"></i> Pointfinder Contact Form</a></li>
+		<li id="nav-menu-item-254" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/carousel/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-327"></i> Image Carousel</a></li>
+		<li id="nav-menu-item-256" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/gallery/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-232"></i> Gallery</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3388" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link pf-megamenu-hidedesktop sub-menu-link">&#8211;</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu pf-megamenu-unhide menu-depth-2">
+		<li id="nav-menu-item-370" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/pie-charts/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-647"></i> Pie Charts</a></li>
+		<li id="nav-menu-item-250" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/testimonials/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-375"></i> Testimonials</a></li>
+		<li id="nav-menu-item-258" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/dividers/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-325"></i> Dividers</a></li>
+		<li id="nav-menu-item-259" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/images/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-684"></i> Images</a></li>
+		<li id="nav-menu-item-252" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/progress-bars/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-421"></i> Progress Bars</a></li>
+		<li id="nav-menu-item-249" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/videos/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-947"></i> Videos</a></li>
+	</ul>
+</li>
+	<li id="nav-menu-item-3389" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link pf-megamenu-hidedesktop sub-menu-link">&#8211;</a>
+	<ul class="sub-menu menu-even  pfnavsub-menu pf-megamenu-unhide menu-depth-2">
+		<li id="nav-menu-item-255" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/iconbox/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-912"></i> Infobox</a></li>
+		<li id="nav-menu-item-629" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/tabs-tours/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-895"></i> Tabs &#038; Tours</a></li>
+		<li id="nav-menu-item-257" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/toggles-accordions/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-284"></i> Toggle &#038; Accordion</a></li>
+		<li id="nav-menu-item-251" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/callout-boxes/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-876"></i> Callout Boxes</a></li>
+		<li id="nav-menu-item-253" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/post-slider/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-406"></i> Blog Posts Slider</a></li>
+		<li id="nav-menu-item-522" class="sub-menu-item sub-sub-menu-item menu-item-even menu-item-depth-2 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/shortcodes/post-grid/" class="menu-link sub-menu-link"><i class="pfadmicon-glyph-205"></i> Blog Posts Grid</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="nav-menu-item-40" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link">Pages</a>
+<ul class="sub-menu menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-3508" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/contact-page-v1/" class="menu-link sub-menu-link">Contact Page v1</a></li>
+	<li id="nav-menu-item-3507" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/contact-page-v2/" class="menu-link sub-menu-link">Contact Page v2</a></li>
+	<li id="nav-menu-item-3509" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/bbpress-pages/" class="menu-link sub-menu-link">bbPress Pages</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-3506" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#" class="menu-link main-menu-link">Blog</a>
+<ul class="sub-menu menu-odd pfnavsub-menu   menu-depth-1">
+	<li id="nav-menu-item-3504" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/blog-left-sidebar/" class="menu-link sub-menu-link">Blog Left Sidebar</a></li>
+	<li id="nav-menu-item-3505" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/blog-right-sidebar/" class="menu-link sub-menu-link">Blog Right Sidebar</a></li>
+	<li id="nav-menu-item-3503" class="sub-menu-item  menu-item-odd menu-item-depth-1 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://pointfindertheme.com/demo/blog-right-sidebar-2/" class="menu-link sub-menu-link">Blog Full Width</a></li>
+</ul>
+</li>
+																				<li id="pfpostitemlink" class="main-menu-item  menu-item-even menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
+										<a class="menu-link main-menu-link">
+										<div class="postanitem-inner">
+										<span class="pfadmicon-glyph-478"></span>Post New Point										</div>
+										</a>
+										</li>
+																			</ul>
+								</nav>	
+
+								<nav id="pf-topprimary-navmobi" class="pf-topprimary-nav pf-nav-dropdown clearfix">
+									<ul class="pf-nav-dropdown  pfnavmenu pf-topnavmenu pf-nav-dropdownmobi">
+																				<li class="pf-login-register" id="pf-login-trigger-button-mobi"><a href="#"><i class="pfadmicon-glyph-584"></i> Login</a></li>
+										<li class="pf-login-register" id="pf-register-trigger-button-mobi"><a href="#"><i class="pfadmicon-glyph-365"></i> Register</a></li>
+										<li class="pf-login-register" id="pf-lp-trigger-button-mobi"><a href="#"><i class="pfadmicon-glyph-889"></i>Forgot Password</a></li>
+																			</ul>
+								</nav>
+
+								<nav id="pf-topprimary-navmobi2" class="pf-topprimary-nav pf-nav-dropdown clearfix">
+									<ul class="pf-nav-dropdown  pfnavmenu pf-topnavmenu pf-nav-dropdownmobi">
+																			</ul>
+								</nav>
+					
+							</div>
+						</div>
+											</div>
+				</div>
+			</div>
+
+        </header>
+		
+        <div class="wpf-container">
+        	<div id="pfmaincontent" class="wpf-container-inner">
+        <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1451399256997"><div class="pf-container"><div class="pf-row"><div class="wpb_column col-lg-12 col-md-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h2 style="font-size: 26px;color: #ffffff;line-height: 39px;text-align: center;font-family:Montserrat;font-weight:700;font-style:normal" class="vc_custom_heading">Find Your Dream Home with POINTFINDER</h2><div class="vc_empty_space"  style="height: 20px" ><span class="vc_empty_space_inner"></span></div>
+          <div class="pointfinder-mini-search" style='background-color:rgba(255,255,255,0.31);padding: 10px 5px;'>
+          <form id="pointfinder-search-form-manual" class="pfminisearch" method="get" action="https://pointfindertheme.com/demo" data-ajax="false">
+          <div class="pfsearch-content golden-forms">
+          <div class="pf-row">
+          <div class="col-lg-3 col-md-3 col-sm-3 colhorsearch">
+										<div id="field550157278543338200000_main" class="ui-widget">
+										<label for="field550157278543338200000" class="pftitlefield"></label>
+										<label class="lbl-ui pflabelfixsearch pflabelfixsearchfield550157278543338200000">
+											<input type="text" name="field550157278543338200000" id="field550157278543338200000" class="input" placeholder="Keyword" />
+										</label>    
+										</div>                        
+										</div><div class="col-lg-3 col-md-3 col-sm-3 colhorsearch"><div id="field_listingtype_main"><div class="pftitlefield">Status:</div><label for="field_listingtype" class="lbl-ui select"><select  id="field_listingtype" name="field_listingtype" class="pf-special-selectbox" data-pf-plc="Please select">	<option></option><option value="3" class="pfoptheader">For Rent</option><option value="2" selected class="pfoptheader">For Sale</option></select></label></div></div><div class="col-lg-3 col-md-3 col-sm-3 colhorsearch"><div id="field_location_main"><div class="pftitlefield">Location:</div><label for="field_location" class="lbl-ui select"><select  id="field_location" name="field_location" class="pf-special-selectbox" data-pf-plc="Please select">	<option></option><option value="15" class="pfoptheader">Los Angeles</option><option value="17">&nbsp;&nbsp;&nbsp;&nbsp;Long Beach</option><option value="16">&nbsp;&nbsp;&nbsp;&nbsp;Torrance</option><option value="18" class="pfoptheader">New York</option><option value="11" class="pfoptheader">San Francisco</option><option value="12">&nbsp;&nbsp;&nbsp;&nbsp;Berkeley</option><option value="37">&nbsp;&nbsp;&nbsp;&nbsp;Daly City</option><option value="38">&nbsp;&nbsp;&nbsp;&nbsp;Mill Valley</option><option value="13">&nbsp;&nbsp;&nbsp;&nbsp;Oakland</option></select></label></div></div><div class="col-lg-3 col-md-3 col-sm-3 colhorsearch"><div id="pfsearchsubvalues"></div><input type="hidden" name="s" value=""/><input type="hidden" name="serialized" value="1"/><input type="hidden" name="action" value="pfs"/><a class="button pfsearch" id="pf-search-button-manual" style='color:#ffffff!important;background-color:#1e73be!important'><i class="pfadmicon-glyph-627"></i> SEARCH</a><script type="text/javascript">
+                (function($) {
+                    "use strict";
+                    $.pfsliderdefaults = {};$.pfsliderdefaults.fields = Array();
+
+                    $(function(){
+                    
+											$( "#field550157278543338200000" ).bind("keydown",function(){
+
+
+											$( "#field550157278543338200000" ).autocomplete({
+											  appendTo: ".pflabelfixsearchfield550157278543338200000",
+										      source: function( request, response ) {
+										        $.ajax({
+										          url: theme_scriptspf.ajaxurl,
+										          dataType: "jsonp",
+										          data: {
+										          	action: "pfget_autocomplete",
+										            q: request.term,
+										            security: theme_scriptspf.pfget_autocomplete,
+										            ftype: "title"
+										          },
+										          success: function( data ) {
+										            response( data );
+										          }
+										        });
+										      },
+										      minLength: 3,
+										      select: function( event, ui ) {
+										        $("#field550157278543338200000").val(ui.item);
+										      },
+										      open: function() {
+										        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+										      },
+										      close: function() {
+										        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+										      }
+										    });
+
+											});
+											$("#field_listingtype").select2({placeholder: "Please select", formatNoMatches:"",allowClear: true, minimumResultsForSearch: -1});if(!$.pf_tablet_check()){$("#field_listingtype").select2("destroy");}$("#field_location").select2({placeholder: "Please select", formatNoMatches:"No result found!",allowClear: true});if(!$.pf_tablet_check()){$("#field_location").select2("destroy");}var pfsearchformerrors = $(".pfsearchformerrors");
+                    
+                        $("#pointfinder-search-form-manual").validate({
+                              debug:false,
+                              onfocus: false,
+                              onfocusout: false,
+                              onkeyup: false,
+                              rules:{},messages:{},
+                              ignore: ".select2-input, .select2-focusser, .pfignorevalidation",
+                              validClass: "pfvalid",
+                              errorClass: "pfnotvalid pfadmicon-glyph-858",
+                              errorElement: "li",
+                              errorContainer: pfsearchformerrors,
+                              errorLabelContainer: $("ul", pfsearchformerrors),
+                              invalidHandler: function(event, validator) {
+                                var errors = validator.numberOfInvalids();
+                                if (errors) {
+                                    pfsearchformerrors.show("slide",{direction : "up"},100)
+                                    $(".pfsearch-err-button").click(function(){
+                                        pfsearchformerrors.hide("slide",{direction : "up"},100)
+                                        return false;
+                                    });
+                                }else{
+                                    pfsearchformerrors.hide("fade",300)
+                                }
+                              }
+                        });
+                    
+                        setTimeout(function(){
+                           $(".select2-container" ).attr("title","");
+                           $("#field_listingtype" ).attr("title","")
+                            
+                        },300);
+                        
+                    });   
+                    
+                })(jQuery);
+                </script></div>          </div>
+          </div>
+          </form>
+          </div>
+          </div></div></div></div></div></div><!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(wp-content/uploads/sites/4/2014/11/slide1.jpg)" data-image-id="939|wp-content/uploads/sites/4/2014/11/slide1.jpg" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="4.12.1"  data-is_old_vc=""  data-theme-support="enable"   data-overlay="true" data-overlay-color="" data-overlay-pattern="wp-content/plugins/Ultimate_VC_Addons/modules/../assets/images/patterns/01.png" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"    ></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1423199146666"><div class="pf-container"><div class="pf-row"><div class="wpb_column col-lg-12 col-md-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="pf_pageh_title"><div class="pf_pageh_title_inner">LATEST PROPERTIES</div></div><div class='pflistgridviewauYygconWshm-container pflistgridviewgr-container'><div class="pfsearchresults pflistgridviewshowauYygconWshm pflistgridview pflistgridview-static">
+            <form action="" method="GET" name="pflistgridviewshowauYygconWshm-form" id="pflistgridviewshowauYygconWshm-form"><div class="pflistgridviewauYygconWshm-header pflistcommonview-header"><ul class="pflistgridviewauYygconWshm-filters-left pflistgridviewauYygconWshm-filters searchformcontainer-filters searchformcontainer-filters-left golden-forms clearfix col-lg-9 col-md-9 col-sm-9 col-xs-12"><li><label for="pfsearch-filter" class="lbl-ui select pfsortby"><select class="pfsearch-filter" name="pfsearch-filter" id="pfsearch-filter"><option value="">SORT BY</option><option value="title">Title</option><option value="date">Date</option><option value="field_bedroom" >Beds</option><option value="field_bathroom" >Baths</option><option value="field_size" >Size</option></select></label></li>
+		                            <li>
+		                                <label for="pfsearch-filter-order" class="lbl-ui select pforderby">
+		                            	<select class="pfsearch-filter-order" name="pfsearch-filter-order" id="pfsearch-filter-order" ><option value="ASC">ASC</option><option value="DESC">DESC</option></select>
+		                                </label>
+		                            </li>
+									
+		                            <li>
+		                                <label for="pfsearch-filter-number" class="lbl-ui select pfnumberby">
+		                            	<select class="pfsearch-filter-number" name="pfsearch-filter-number" id="pfsearch-filter-number" ><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8" selected>8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="25">25</option><option value="50">50</option><option value="75">75</option></select>
+		                                </label>
+		                            </li>
+					                            <li class="pfltypebyli">
+					                                <label for="pfsearch-filter-ltype" class="lbl-ui select pfltypeby"><select  name='pfsearch-filter-ltype' id='pfsearch-filter-ltype' class='pfsearch-filter-ltype' >
+	<option value='0' selected='selected'>Listing Types</option>
+	<option class="level-0" value="2">For Sale&nbsp;&nbsp;(17)</option>
+	<option class="level-0" value="3">For Rent&nbsp;&nbsp;(7)</option>
+</select>
+
+					                                </label>
+					                            </li>
+												
+					                            <li class="pfitypebyli">
+					                                <label for="pfsearch-filter-itype" class="lbl-ui select pfitypeby"><select  name='pfsearch-filter-itype' id='pfsearch-filter-itype' class='pfsearch-filter-itype' >
+	<option value='0' selected='selected'>Item Types</option>
+	<option class="level-0" value="4">Commercial</option>
+	<option class="level-1" value="6">&nbsp;&nbsp;&nbsp;Office</option>
+	<option class="level-1" value="7">&nbsp;&nbsp;&nbsp;Shop</option>
+	<option class="level-0" value="5">Residential</option>
+	<option class="level-1" value="8">&nbsp;&nbsp;&nbsp;Apartment</option>
+	<option class="level-1" value="9">&nbsp;&nbsp;&nbsp;Condominium</option>
+	<option class="level-1" value="10">&nbsp;&nbsp;&nbsp;Villa</option>
+</select>
+
+					                                </label>
+					                            </li>
+												
+					                            <li class="pflocationbyli">
+					                                <label for="pfsearch-filter-location" class="lbl-ui select pflocationby"><select  name='pfsearch-filter-location' id='pfsearch-filter-location' class='pfsearch-filter-location' >
+	<option value='0' selected='selected'>Locations</option>
+	<option class="level-0" value="11">San Francisco</option>
+	<option class="level-1" value="12">&nbsp;&nbsp;&nbsp;Berkeley</option>
+	<option class="level-1" value="13">&nbsp;&nbsp;&nbsp;Oakland</option>
+	<option class="level-1" value="37">&nbsp;&nbsp;&nbsp;Daly City</option>
+	<option class="level-1" value="38">&nbsp;&nbsp;&nbsp;Mill Valley</option>
+	<option class="level-0" value="15">Los Angeles</option>
+	<option class="level-1" value="16">&nbsp;&nbsp;&nbsp;Torrance</option>
+	<option class="level-1" value="17">&nbsp;&nbsp;&nbsp;Long Beach</option>
+	<option class="level-0" value="18">New York</option>
+</select>
+
+					                                </label>
+					                            </li>
+												</ul>
+	                        <ul class="pflistgridviewauYygconWshm-filters-right pflistgridviewauYygconWshm-filters searchformcontainer-filters searchformcontainer-filters-right clearfix col-lg-3 col-md-3 col-sm-3 col-xs-12">
+								<li class="pfgridlist2 pfgridlistit" data-pf-grid="grid2" ></li><li class="pfgridlist3 pfgridlistit" data-pf-grid="grid3" ></li><li class="pfgridlist4 pfgridlistit" data-pf-grid="grid4" ></li><li class="pfgridlist5 pfgridlistit" data-pf-grid="grid1" ></li>
+								<li class="pfgridlist6"></li>                                
+							</ul>
+							</div><div class="pflistgridviewauYygconWshm-content pflistcommonview-content"><ul class="pfitemlists-content-elements pf4col" data-layout-mode="fitRows"><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/150-kingsbury-rd/'><img src='wp-content/uploads/sites/4/2014/11/13651509023_76383875d8_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="76" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/13651509023_76383875d8_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																		<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																			<a class="pficon-videoclick" data-pf-link="https://vimeo.com/17882714" style="cursor:pointer">
+																				<i class="pfadmicon-glyph-573"></i>
+																			</a>
+																		</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/150-kingsbury-rd/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pfribbon-wrapper-featured"><div class="pfribbon-featured">FEATURED</div></div><div class="pfconditions-tag" style="color:#ffffff;background-color:#dd1818"><a href="https://pointfindertheme.com/demo/condition/freehold/" style="color:#ffffff;">Freehold</a></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-rent/" rel="tag">For Rent</a></li></ul></div><div class="pflistingitem-subelement pf-price">$2,000<span class="pf-price-suffix">/mo</span></div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/150-kingsbury-rd/">150 Kingsbury Rd</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 150 Kingsbury Road, NY 10804, US...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/235-chapman-rd/'><img src='wp-content/uploads/sites/4/2014/11/3640924252_21e2e7d3ff_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="50" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/3640924252_21e2e7d3ff_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/235-chapman-rd/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pfribbon-wrapper-featured"><div class="pfribbon-featured">FEATURED</div></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-sale/" rel="tag">For Sale</a></li></ul></div><div class="pflistingitem-subelement pf-price">$1,630,000</div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/235-chapman-rd/">235 Chapman Rd</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 235 Chapman Drive, Madera, CA, U...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">5</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">3</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">300sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/101-lombard-st-apt-410e/'><img src='wp-content/uploads/sites/4/2014/11/13651495615_c661ee1940_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="42" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/13651495615_c661ee1940_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																		<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																			<a class="pficon-videoclick" data-pf-link="https://vimeo.com/17882714" style="cursor:pointer">
+																				<i class="pfadmicon-glyph-573"></i>
+																			</a>
+																		</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/101-lombard-st-apt-410e/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pfconditions-tag" style="color:#ffffff;background-color:#5cd606"><a href="https://pointfindertheme.com/demo/condition/foreclosure/" style="color:#ffffff;">Foreclosure</a></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-sale/" rel="tag">For Sale</a></li></ul></div><div class="pflistingitem-subelement pf-price">$340,000</div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/101-lombard-st-apt-410e/">101 Lombard St APT 410E</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 101 Lombard Street #410e, San Fr...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/2325-washington-st-apt-103-2/'><img src='wp-content/uploads/sites/4/2014/11/13651509023_76383875d8_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="62" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/13651509023_76383875d8_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/2325-washington-st-apt-103-2/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pfconditions-tag" style="color:#ffffff;background-color:#1e73be"><a href="https://pointfindertheme.com/demo/condition/no-chain/" style="color:#ffffff;">No Chain</a></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-rent/" rel="tag">For Rent</a></li></ul></div><div class="pflistingitem-subelement pf-price">$1,000<span class="pf-price-suffix">/mo</span></div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/2325-washington-st-apt-103-2/">1629 13th Street</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 1629 13th Street, Oakland, CA 94...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/1659-e-61st-st/'><img src='wp-content/uploads/sites/4/2014/11/3640918740_599b359edc_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="70" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/3640918740_599b359edc_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/1659-e-61st-st/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-rent/" rel="tag">For Rent</a></li></ul></div><div class="pflistingitem-subelement pf-price">$800<span class="pf-price-suffix">/mo</span></div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/1659-e-61st-st/">1659 E 61st St</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 1659 East 61st Street, Los Angel...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/1722-n-avalon-blvd-apt-14/'><img src='wp-content/uploads/sites/4/2014/11/9383575843_b41ef64cfd_b1-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="73" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/9383575843_b41ef64cfd_b1.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/1722-n-avalon-blvd-apt-14/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pfconditions-tag" style="color:#000000;background-color:#e88235"><a href="https://pointfindertheme.com/demo/condition/vacant/" style="color:#000000;">Vacant</a></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-rent/" rel="tag">For Rent</a></li></ul></div><div class="pflistingitem-subelement pf-price">$950<span class="pf-price-suffix">/mo</span></div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/1722-n-avalon-blvd-apt-14/">1722 N Avalon Blvd APT 14</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 1722 Avalon Boulevard #14, Los A...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/18826-van-ness-ave/'><img src='wp-content/uploads/sites/4/2014/11/11534572345_2538c3e64e_b-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="67" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/11534572345_2538c3e64e_b.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/18826-van-ness-ave/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-sale/" rel="tag">For Sale</a></li></ul></div><div class="pflistingitem-subelement pf-price">$590,000</div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/18826-van-ness-ave/">18826 Van Ness Ave</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 18826 Van Ness Avenue, Torrance,...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li><li class="col-lg-3 col-md-4 col-sm-4 col-xs-12 wpfitemlistdata isotope-item"><div class="pflist-item" style="background-color:#ffffff;"><div class="pflist-item-inner"><div class="pflist-imagecontainer pflist-subitem"><a href='https://pointfindertheme.com/demo/properties/2016-blake-st-apt-1/'><img src='wp-content/uploads/sites/4/2014/11/9383575843_b41ef64cfd_b1-440x330.jpg' alt='' /></a>
+																<div class="RibbonCTR">
+									                                <span class="Sign">
+										                                <a class="pf-favorites-link" data-pf-num="64" data-pf-active="false" data-pf-item="false" title="Add to Favorites">
+										                                	<i class="pfadmicon-glyph-629"></i>
+										                                </a>
+									                                </span>
+									                                <span class="Triangle"></span>
+									                            </div><div class="pfImageOverlayH hidden-xs"></div><div class="pfButtons pfStyleV2 pfStyleVAni hidden-xs">
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare clearfix">
+																		<a class="pficon-imageclick" data-pf-link="wp-content/uploads/sites/4/2014/11/9383575843_b41ef64cfd_b1.jpg" style="cursor:pointer">
+																			<i class="pfadmicon-glyph-684"></i>
+																		</a>
+																	</span>
+																	<span class="pfHoverButtonStyle pfHoverButtonWhite pfHoverButtonSquare">
+																		<a href="https://pointfindertheme.com/demo/properties/2016-blake-st-apt-1/">
+																			<i class="pfadmicon-glyph-794"></i>
+																		</a>
+																	</span></div><div class="pflisting-itemband"><div class="pflist-pricecontainer"><div class="pflistingitem-subelement pf-price"><ul class="pointfinderpflisttermsgr"><li><a href="https://pointfindertheme.com/demo/listing/for-sale/" rel="tag">For Sale</a></li></ul></div><div class="pflistingitem-subelement pf-price">$380,000</div></div></div></div>
+														<div class="pflist-detailcontainer pflist-subitem">
+															<ul class="pflist-itemdetails">
+																<li class="pflist-itemtitle"><a href="https://pointfindertheme.com/demo/properties/2016-blake-st-apt-1/">2016 Blake St APT 1</a></li>
+																
+																<li class="pflist-address"><i class="pfadmicon-glyph-109"></i> 2016 Blake St APT 1, San Francis...</li>
+																
+															</ul>
+															
+														</div>
+														<div class="pflist-subdetailcontainer pflist-subitem">
+															<div class="pflist-customfields"><div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Beds: </span><span class="pf-ftext">2</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Baths: </span><span class="pf-ftext">1</span></div> <div class="pflistingitem-subelement pf-onlyitem"><span class="pf-ftitle">Size: </span><span class="pf-ftext">180sqm</span></div></div>
+															</div></div></div></li></ul><div class="pfstatic_paginate" ><ul class='page-numbers'>
+	<li><span class='page-numbers current'>1</span></li>
+	<li><a class='page-numbers' href='https://pointfindertheme.com/demo/home-page-mini-search/page/2/'>2</a></li>
+	<li><a class='page-numbers' href='https://pointfindertheme.com/demo/home-page-mini-search/page/3/'>3</a></li>
+	<li><a class="next page-numbers" href="https://pointfindertheme.com/demo/home-page-mini-search/page/2/">Next &raquo;</a></li>
+</ul>
+</div></div><input type='hidden' value='grid4' name='pfsearch-filter-col'></form></div></div> 
+					<script type='text/javascript'>
+					(function($) {
+						'use strict'
+						$('.pflistgridviewauYygconWshm-filters-right .pfgridlistit').click(function(){
+							$('input[name=pfsearch-filter-col]').val($(this).attr('data-pf-grid'));
+							$('#pflistgridviewshowauYygconWshm-form').submit();	
+						});
+						
+						$('.pflistgridviewauYygconWshm-filters-left > li > label > select').change(function(){
+							$('#pflistgridviewshowauYygconWshm-form').submit();
+						});
+						
+						$(function() {
+							var intervaltime = 0;
+							var makeitperfextpf = setInterval(function() {
+								
+							
+								
+								var layout_modes = {
+						        fitrows: 'fitRows',
+						        masonry: 'masonry'
+						        }
+						        $('.pflistgridviewauYygconWshm-content').each(function(){
+						            var $container = $(this);
+						            var $thumbs = $container.find('.pfitemlists-content-elements');
+						            var layout_mode = $thumbs.attr('data-layout-mode');
+						            $thumbs.isotope({
+						                itemSelector : '.isotope-item',
+						                layoutMode : (layout_modes[layout_mode]==undefined ? 'fitRows' : layout_modes[layout_mode])
+						            });
+						            
+						        });
+								
+								
+								intervaltime++;
+								if (intervaltime == 5) {
+									clearInterval(makeitperfextpf);
+								}
+							}, 1000);
+						});
+
+						$('.pfButtons a').click(function() {
+							if($(this).attr('data-pf-link')){
+								$.prettyPhoto.open($(this).attr('data-pf-link'));
+							}
+						});
+
+					})(jQuery);
+					</script>
+</div></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1427996279389 vc_row-has-fill vc_row-no-padding pf-fixed-background"><div class="pf-fullwidth"><div class="wpb_column col-lg-12 col-md-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h2 style="font-size: 31px;color: #f7f7f7;line-height: 38px;text-align: center;font-family:Arimo;font-weight:700;font-style:normal" class="vc_custom_heading">Introducing Point Finder</h2><h4 style="font-size: 18px;color: #dddddd;line-height: 28px;text-align: center;font-family:Arimo;font-weight:400;font-style:normal" class="vc_custom_heading">Point Finder theme makes it easy to build amazing websites.</h4><div class="vc_button-2-wrapper vc_button-2-align-center"><a class="vc_btn vc_btn_white vc_btn-white vc_btn_md vc_btn-md vc_btn_3d" href="#" title="" target="">PURCHASE NOW</a>
+</div>
+</div></div></div></div></div><!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(wp-content/uploads/sites/4/revslider/sliderpreview/darkblurbg.jpg)" data-image-id="980" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="4.12.1"  data-is_old_vc=""  data-theme-support="enable"   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1451242416469 vc_row-has-fill"><div class="pf-container"><div class="pf-row"><div class="wpb_column col-lg-12 col-md-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1423198924244">                                                                                                                                                  <div class="wpb_column col-lg-12 col-md-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+<div class="wpb_images_carousel wpb_content_element">
+    <div class="wpb_wrapper">
+        <div id="vc-images-carousel-231df42d8c98cc11410edfae8253402d"  class="vc-slide vc-image-carousel pf-client-carousel vc-image-carousel-5">
+            <!-- Wrapper for slides -->
+            <div class="vc-carousel-inner">
+            	
+                <div class="vc-carousel-slideline"><div class="vc-carousel-slideline-inner" id="231df42d8c98cc11410edfae8253402d"> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/square-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/solidsociety-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/monkeyrule-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/GreenmeetingLogoinstant-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/GlobalValley-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div> <div class="vc-item"><div class="vc-inner" style="border:1px solid rgba(60,60,60,0.07)"><a href="#" class="wbp_vc_gallery_pfwrapper pf-vcimage-carousel">
+                            <img src="wp-content/uploads/sites/4/2014/11/Cyberoamnstant-263x197.jpg" alt="">
+                        <div class="PStyleHe2"></div></a> </div></div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+(function($) {
+	"use strict";
+	$(function() {
+		$("#231df42d8c98cc11410edfae8253402d").owlCarousel({
+				items : 5,navigation : true,paginationNumbers : false,pagination : true,autoPlay : false,
+				slideSpeed:700,
+				mouseDrag:true,
+				touchDrag:true,
+				itemSpaceWidth: 10,itemBorderWidth : 5,
+				autoHeight : false,
+				responsive:true,
+				itemsScaleUp : false,
+				navigationText:false,
+				theme:"owl-theme",
+				singleItem : false,
+			});
+	});
+
+})(jQuery);
+</script></div></div></div></div></div></div></div></div></div></div><script>
+            (function($) {
+            "use strict";
+            $(document).ready(function(){
+                $(".pointfinderexfooterclass a").hover(function(){
+                    $(this).css({ color: "#efefef"});
+                }, function(){
+                    $(this).css({ color: "#ffffff"});
+                });
+                $(".pointfinderexfooterclass").css("color","#ffffff!important");
+                $(".pointfinderexfooterclass a").css("color","#ffffff!important");
+            });
+           
+            })(jQuery);
+            </script><div class="vc_row wpb_row vc_row-fluid vc_custom_1451242464933 vc_row-has-fill pointfinderexfooterclassx"><div id="pf-footer-row" class="pf-container pointfinderexfooterclass"><div class="pf-row"><div class="wpb_column col-lg-3 col-md-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_widgetised_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+			<div id="text-4" class="widget_text"><div class="pfwidgettitle"><div class="widgetheader">Sample Text</div></div><div class="pfwidgetinner">			<div class="textwidget">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorpe.</div>
+		</div></div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column col-lg-3 col-md-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_widgetised_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+			<div id="pf_featured_items_w-5" class="widget_pfitem_recent_entries"><div class="pfwidgettitle"><div class="widgetheader">Featured Item</div></div><div class="pfwidgetinner"><ul class="pf-widget-itemlist"><li class="clearfix"><a href="https://pointfindertheme.com/demo/properties/150-kingsbury-rd/" title=""><img src="wp-content/uploads/sites/4/2014/11/13651509023_76383875d8_b-150x150-70x70.jpg" alt=""><div class="pf-recent-items-title">150 Kingsbury Rd</div><div class="pf-recent-items-address">150 Kingsbury Road, NY 10804, USA</div></a></li><li class="clearfix"><a href="https://pointfindertheme.com/demo/properties/235-chapman-rd/" title=""><img src="wp-content/uploads/sites/4/2014/11/3640924252_21e2e7d3ff_b-150x150-70x70.jpg" alt=""><div class="pf-recent-items-title">235 Chapman Rd</div><div class="pf-recent-items-address">235 Chapman Drive, Madera, CA, USA</div></a></li></ul></div></div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column col-lg-3 col-md-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_widgetised_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+			<div id="pf_twitter_w-2" class="widget_pfitem_recent_entries"><div class="pfwidgettitle"><div class="widgetheader">Latest Tweet</div></div><div class="pfwidgetinner">
+            <!-- Twitter page begin -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                        jQuery(function () {
+                            jQuery.JQTWEET.loadTweets("webbudesign","1");
+                        });     
+                    });
+                </script>
+
+                <div id="jstwitter"></div>
+
+            <!-- Twitter End --></div></div>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column col-lg-3 col-md-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_widgetised_column wpb_content_element">
+		<div class="wpb_wrapper">
+			
+			<div id="recent-posts-4" class="widget_recent_entries">		<div class="pfwidgettitle"><div class="widgetheader">Recent Posts</div></div><div class="pfwidgetinner">		<ul>
+					<li>
+				<a href="https://pointfindertheme.com/demo/gallery-sample/">Gallery Sample</a>
+							<span class="post-date">December 6, 2014</span>
+						</li>
+					<li>
+				<a href="https://pointfindertheme.com/demo/quote-post-sample/">Quote Post Sample</a>
+							<span class="post-date">December 6, 2014</span>
+						</li>
+					<li>
+				<a href="https://pointfindertheme.com/demo/link-post-sample/">Link Post Sample</a>
+							<span class="post-date">December 6, 2014</span>
+						</li>
+					<li>
+				<a href="https://pointfindertheme.com/demo/status-post-sample/">Status Post Sample</a>
+							<span class="post-date">December 6, 2014</span>
+						</li>
+				</ul>
+		</div></div>
+		</div>
+	</div>
+</div></div></div></div></div></div>
+                    </div>
+            </div>
+
+            <div id="pf-membersystem-dialog"></div>
+            <a title="" class="pf-up-but"><i class="pfadmicon-glyph-859"></i></a>
+            <div class="wpf-footer-row-move"></div>
+                        <footer class="wpf-footer">
+            <div class="pf-container"><div class="pf-row clearfix">            <div class="wpf-footer-text col-lg-12">
+              © Copyright  - <a href="https://pointfindertheme.com/demo">Pointfinder Theme Demo</a> - <a href="http://themeforest.net/user/Webbu/portfolio">PointFinder Theme by Webbu</a>
+            </div>
+            <ul class="pf-footer-menu pfrightside"><li id="menu-item-1247" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1247"><a href="#">Privacy Policy</a></li>
+<li id="menu-item-1248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1248"><a href="#">Terms of Use</a></li>
+</ul>            </div></div>            </footer>
+            		<link rel='stylesheet' id='vc_google_fonts_montserratregular700-css'  href='//fonts.googleapis.com/css?family=Montserrat%3Aregular%2C700&#038;subset=latin&#038;ver=4.6.1' media='all' />
+<link rel='stylesheet' id='pfsearch-select2-css-css'  href='wp-content/themes/pointfinder/pointfinder/css/select2.css?ver=3.5.4' media='all' />
+<link rel='stylesheet' id='vc_google_fonts_arimoregularitalic700700italic-css'  href='//fonts.googleapis.com/css?family=Arimo%3Aregular%2Citalic%2C700%2C700italic&#038;subset=latin&#038;ver=4.6.1' media='all' />
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='wp-content/plugins/bbpress/templates/default/js/editor.js?ver=2.5.10-6063'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/wp-a11y.min.js?ver=4.6.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No search results.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pftheme_minified_package = {"w1":"This field is required"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/pointfinder.min.package.js?ver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/owl.carousel.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/responsive_menu.min.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var theme_scriptspf = {"ajaxurl":"https:\/\/pointfindertheme.com\/demo\/wp-content\/themes\/pointfinder\/admin\/core\/pfajaxhandler.php","homeurl":"https:\/\/pointfindertheme.com\/demo","pfget_usersystem":"5e8207fda8","pfget_modalsystem":"80e1f36f04","pfget_usersystemhandler":"379ea5e2b4","pfget_modalsystemhandler":"2fd1ca7341","pfget_favorites":"aa335a9041","pfget_searchitems":"7f55d49cd2","pfget_reportitem":"7616903609","pfget_claimitem":"3cadb4b2cd","pfget_flagreview":"8f2bc951fd","pfget_grabtweets":"e2780f6a11","pfget_autocomplete":"ad8d5597a2","recaptchapkey":"6Lcbzf0SAAAAABv3YoAa80qtV4G1hcF1CTS1cvhH","pfnameerr":"Please write name","pfemailerr":"Please write email","pfemailerr2":"Please write correct email","pfmeserr":"Please write message","userlog":"0","dashurl":"https:\/\/pointfindertheme.com\/demo\/dashboard\/?ua=newitem","profileurl":"https:\/\/pointfindertheme.com\/demo\/dashboard\/?ua=profile","pfselectboxtex":"Please Select","pfcurlang":null,"pfcurrentpage":"https:\/\/pointfindertheme.com\/demo\/http:\/\/home-page-mini-search"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/theme-scripts.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/jquery.infinitescroll.min.js?ver=2.0'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/imagesloaded.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pointfinder_twitterspf = {"ajaxurl":"https:\/\/pointfindertheme.com\/demo\/wp-content\/themes\/pointfinder\/admin\/core\/pfajaxhandler.php","pfget_grabtweets":"e2780f6a11","grabtweettext":"Please control secret keys!"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/twitterwebbu.js?ver=1.0.0'></script>
+<script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/js_composer_front.min.js?ver=4.12'></script>
+<script type='text/javascript' src='wp-content/themes/pointfinder/pointfinder/js/select2.min.js?ver=3.5.4'></script>
+	</body>
+</html>
